@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    font-family: "Inika";
+}
+
+#wrapper{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header"
+        "navigation"
+        "nestedgrid"
+        "footer";    
+}
+div{border:1px solid black;}
+
+#header{
+    grid-area: header; 
+    text-align: center;
+        background-color: rgb(8,69,117);
+    font-family: "Inria+Serif";
+    font-size: 70px;
+
+}
+
+#navigation{
+    grid-area: navigation;
+    font-size: 20px;
+    font-family: "Inria+Serif";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3671C8;
+}
+
+li {
+  float: left;
+    border-right: 1px solid white;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 93px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #5DB0F1;
+}
+
+
+#nestedgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contact photo"; 
+    grid-gap: 20px;
+    padding: 60px;
+}
+
+#contact{
+    grid-area: contact;
+    background-color: rgb(8,69,117);
+    padding: 20px;
+    color: white;
+    height: 600px;
+    margin-left: 100px;
+     font-family: "Inika";
+}
+
+#photo{
+    grid-area: photo;
+    border-color: white;
+}
+
+#footer{
+     grid-area: footer;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo number"
+        "rights rights";
+    grid-area: footer;
+    background-color: rgb(8,69,117);
+}
+
+#logo{
+    grid-area: logo;
+    margin-left: 440px;
+    border-color: rgb(8,69,117);
+    font-family: "Inria+Serif";
+}
+
+.resize{
+    width:230px;
+    height:120px;
+}
+
+
+#number{
+    grid-area: number;
+    margin-right: 440px;
+    border-color: rgb(8,69,117);
+    text-align: center;
+    color: white;
+     font-family: "Inika";
+}
+
+
+#link{
+    color: rgb(8,69,117);
+    background-color:#A7BEE2; 
+    padding: 5px;
+    text-align: center;
+    font-size: 30px
+}
+
+#rights{
+    grid-area: rights;
+    margin-left: 50px;
+    margin-right:50px;
+    text-align: center;
+    background-color: rgb(8,69,117);
+    border-top-color: white;
+    border-bottom-color:rgb(8,69,117); 
+    border-left-color:rgb(8,69,117);
+    border-right-color:rgb(8,69,117);
+    border-width: 3px;
+    color: white;
+     font-family: "Inika";
+}
+
+
+
+img{
+    height: 600px;
+}

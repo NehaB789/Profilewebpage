@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    font-family: "Inika";
+}
+
+#wrapper{
+    display:grid;
+    grid-template-areas: "header"
+        "navigation"
+        "nestedgrid"
+        "imagescroll"
+        "nestedgrid2"
+        "footer";    
+}
+div{border:1px solid black;}
+
+#header{
+    grid-area: header;
+    background-color: rgb(8,69,117);
+    text-align: center;
+    font-family: "Inria+Serif";
+    font-size: 70px;
+    
+}
+
+#navigation{
+    grid-area: navigation;
+    font-size: 20px;
+    font-family: "Inria+Serif";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3671C8;
+}
+
+li {
+  float: left;
+    border-right: 1px solid white;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 93.5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #5DB0F1;
+}
+
+
+#nestedgrid2{
+    display: grid;
+    grid-template-areas: "chess badminton violin"
+    "reading art dog";
+    background-color: white;    
+    padding: 30px;
+    grid-gap: 50px;
+}
+#chess{grid-area: chess;
+color: black;
+    width: 302px;
+    height: 233px;
+    text-align: center;
+    margin-left: 100px;
+
+}
+#chess:hover{
+    transform: scale(1.4);
+}
+
+#badminton{grid-area: badminton;
+background-color: greenyellow;
+color: black;
+    text-align: center;
+    width: 302px;
+    height: 233px;
+}
+#badminton:hover{
+    transform: scale(1.4);
+}
+
+#violin{grid-area: violin;
+background-color: greenyellow;
+color: black;
+    text-align: center;
+    width: 302px;
+    height: 233px;
+    
+}
+
+#violin:hover{
+    transform: scale(1.4);
+}
+
+#reading{grid-area: reading;
+background-color: greenyellow;
+color: black;
+    text-align: center;
+    width: 302px;
+    height: 233px;
+    margin-left: 100px;
+}
+#reading:hover{
+    transform: scale(1.4);
+}
+
+#art{grid-area: art;background-color: greenyellow;
+color: black;
+    text-align: center;
+    width: 302px;
+    height: 233px;
+}
+#art:hover{
+    transform: scale(1.4);
+}
+
+
+#dog{grid-area: dog;
+    background-color: greenyellow;
+color: black;
+    text-align: center;
+    width: 302px;
+    height: 233px;
+    
+}
+#dog:hover{
+    transform: scale(1.4);
+}
+
+#footer{
+     grid-area: footer;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo number"
+        "rights rights";
+    grid-area: footer;
+    background-color: rgb(8,69,117);
+}
+
+#logo{
+    grid-area: logo;
+    margin-left: 440px;
+    border-color: rgb(8,69,117);
+    font-family: "Inria+Serif";
+}
+
+.resize{
+    width:230px;
+    height:120px;
+}
+
+#number{
+    grid-area: number;
+    margin-right: 440px;
+    border-color: rgb(8,69,117);
+    text-align: center;
+    color: white;
+}
+
+
+
+#link{
+    color: rgb(8,69,117);
+    background-color:#A7BEE2; 
+    padding: 5px;
+    text-align: center;
+    font-size: 30px
+}
+
+#rights{
+    grid-area: rights;
+    margin-left: 50px;
+    margin-right:50px;
+    text-align: center;
+    background-color: rgb(8,69,117);
+    border-top-color: white;
+    border-bottom-color:rgb(8,69,117); 
+    border-left-color:rgb(8,69,117);
+    border-right-color:rgb(8,69,117);
+    border-width: 3px;
+    color: white;
+    
+}
+
+
+img{
+    width: 100%;
+        height:100%;
+}
+

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+#wrapper{
+    display:grid;
+        grid-template-columns: 3fr 2fr;
+    grid-template-areas: "header header"
+        "navigation navigation"
+        "skills achievements" 
+        "footer footer";    
+}
+div{border:1px solid black;}
+
+#header{
+    grid-area: header;
+    background-color: rgb(8,69,117);
+    text-align: center;
+    font-family: "Inria+Serif";
+    font-size: 70px;
+}
+
+#navigation{
+    grid-area: navigation;
+    font-size: 20px;
+    font-family: "Inria+Serif";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3671C8;
+}
+
+li {
+  float: left;
+    border-right: 1px solid white;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 93.5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #5DB0F1;
+}
+
+}
+#skills{
+    grid-area: skills;
+    text-align: left;
+    background-color: white;
+}
+#achievements
+{
+    grid-area: achievements;
+    text-align: center;
+    background-color: #A9C6F1;
+}
+#footer{
+     grid-area: footer;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo number"
+        "rights rights";
+    grid-area: footer;
+    background-color: rgb(8,69,117);
+}
+
+#logo{
+    grid-area: logo;
+    margin-left: 440px;
+    border-color: rgb(8,69,117);
+    font-family: "Inria+Serif"
+}
+
+.resize{
+    width:230px;
+    height:120px;
+}
+
+#number{
+    grid-area: number;
+    margin-right: 440px;
+    border-color: rgb(8,69,117);
+    text-align: center;
+    color: white;
+}
+
+
+
+#link{
+    color: rgb(8,69,117);
+    background-color:#A7BEE2; 
+    padding: 5px;
+    text-align: center;
+    font-size: 30px
+}
+
+#rights{
+    grid-area: rights;
+    margin-left: 50px;
+    margin-right:50px;
+    text-align: center;
+    background-color: rgb(8,69,117);
+    border-top-color: white;
+    border-bottom-color:rgb(8,69,117); 
+    border-left-color:rgb(8,69,117);
+    border-right-color:rgb(8,69,117);
+    border-width: 3px;
+    color: white;
+    
+}
+
+
+p{
+    text-align: center;
+    text-decoration: underline; 
+    font-size: 20px;
+}
+
+#Creativity{
+    border-color: white;
+     margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+#Creativitybar{
+    margin-left: 50px;
+    margin-right: 82px;
+    text-align: right;
+    background-color: #50aaf0;
+    color: white;
+    padding: 3px;
+}
+
+#time{
+    border-color: white;
+     margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    
+}
+#timebar{
+
+    margin-left: 50px;
+    margin-right: 163px;
+    text-align: right;
+    background-color: #50aaf0;
+    color: white;
+    padding: 3px;
+}
+#adapt{
+    border-color: white;
+     margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+#adaptbar{
+
+    margin-left: 50px;
+    margin-right: 123px;
+    text-align: right;
+    background-color: #50aaf0;
+    color: white;
+    padding: 3px;
+}
+
+#problem{
+    border-color: white;
+     margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+#problembar{
+
+    margin-left: 50px;
+    margin-right: 139px;
+    text-align: right;
+    background-color: #50aaf0;
+    color: white;
+    padding: 3px;
+}
+
+#enthusiasm{
+    border-color: white;
+     margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    
+}
+#enthusiasmbar{
+
+    margin-left: 50px;
+    margin-right: 82px;
+    text-align: right;
+    background-color: #50aaf0;
+    color: white;
+    padding: 3px;
+}
+
+body{
+    font-family: "Inika";
+}
